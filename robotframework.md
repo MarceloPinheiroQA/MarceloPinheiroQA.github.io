@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Playwright
+title: Robot Framework
 image: assets/images/pic01.jpg
 nav-menu: true
 ---
@@ -16,33 +16,32 @@ nav-menu: true
 		</header>
 
 <!-- Content -->
-<h2 id="content">Playwright project automation</h2>
-<p>After working with Robot Framework, I started building automations with Playwright to gain more speed and flexibility in web testing. Playwright handles async flows naturally, which makes test execution smoother and helps reduce flaky scenarios. It also connects well with AI tools and MCP workflows, making debugging and test maintenance more efficient. Although Robot Framework is still a great framework, Playwright adds another strong option for modern and complex web apps.</p>
+<h2 id="content">Robot project automation</h2>
+<p>I have been working with Robot Framework for 6 years, and it has been a key part of my automation journey. One of its biggest strengths is readability: the keyword-driven style makes test cases clear, maintainable, and easy for technical and non-technical teams to understand. I have solid hands-on experience with both SeleniumLibrary and Browser Library for web automation, and I also use Robot to validate REST and SOAP APIs as part of integration and end-to-end test strategies. Robot Framework gives me a reliable, scalable foundation for building structured test suites with strong reporting and smooth CI/CD integration.</p>
 
 <hr class="major" />
 
 <div class="row">
 
-		<h2 id="automation-project">Playwright Automation Project</h2>
+		<h2 id="automation-project">Robot Automation Project</h2>
 
         <p>I developed an automation project to blabla ecommerce bla bla não sei o que lá</p>
 
-		<iframe 
-			src="https://codesandbox.io/p/github/MarceloPinheiroQA/playwright-automation/Main?embed=1&file=%2Fpackage.json"
-			style="width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden; margin-bottom: 2rem; margin-top: 2rem;"
-			title="MarceloPinheiroQA/playwright-automation/Main"
+		<iframe src="https://codesandbox.io/p/github/MarceloPinheiroQA/Automation/main?import=true&embed=1&file=%2FTests%2FAPI%2F01_SmokeApi.robot"
+			style="width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden; margin-bottom: 2rem; margin-top: 2rem;""
+			title="MarceloPinheiroQA/Automation/main"
 			allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
 			sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 		></iframe>
 
 
         <ul class="actions">
-            <li><a href="https://github.com/MarceloPinheiroQA/playwright-automation" class="button special icon fa-github">Playwright Repo</a></li>
+            <li><a href="https://github.com/MarceloPinheiroQA/Automation" class="button special icon fa-github">Robot Repo</a></li>
         </ul>
 
         <!-- Blockquote -->
         <h3>Did you know?</h3>
-        <blockquote>The <b>Browser Library</b> is architected upon Playwright’s high-performance engine, seamlessly blending human-readable syntax with elite-level execution speed. Truly, <em>the best of both worlds</em>.</blockquote>
+        <blockquote>Robot Framework is agnostic by design. While it’s famous for web testing, it’s not tied to any specific language or technology. From APIs and Databases to SSH and Mainframes, it uses the same 'keyword' logic to automate almost anything in the digital world..</blockquote>
 
 
         <hr class="major" />
@@ -50,13 +49,13 @@ nav-menu: true
     
 	<div class="6u$ 12u$(small)">
 		<h3>CI/CD Integration</h3>
-		<p>I created a pipeline to run the automation project, it goes by runtype bla bla dotenv bla bla.</p>
+		<p>I created a pipeline to run the automation project, it goes by runtype bla bla bla bla.</p>
 	</div>
 
 
     <div style="display: flex; justify-content: center; margin: 2.5rem 0;">
         <iframe
-            src="https://www.youtube.com/embed/Se237UXFKlQ?si=r2QQ6sED5mduPdzH"
+            src="https://www.youtube.com/embed/XpdpW0z9xnQ?si=0noiDIULmswkWCQ7&amp;start=10"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
