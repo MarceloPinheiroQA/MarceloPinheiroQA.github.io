@@ -23,9 +23,10 @@ nav-menu: true
 
 <div class="row">
 
+	<div class="12u$">
 		<h2 id="automation-project">Playwright Automation Project</h2>
-
-        <p>I developed an automation project to blabla ecommerce bla bla não sei o que lá</p>
+		<p>I developed an automation project to blabla ecommerce bla bla não sei o que lá</p>
+	</div>
 
 		<iframe 
 			src="https://codesandbox.io/p/github/MarceloPinheiroQA/playwright-automation/Main?embed=1&file=%2Fpackage.json"
@@ -48,13 +49,13 @@ nav-menu: true
         <hr class="major" />
     
     
-	<div class="6u$ 12u$(small)">
+	<div class="12u$">
 		<h3>CI/CD Integration</h3>
 		<p>I created a pipeline to run the automation project, it goes by runtype bla bla dotenv bla bla.</p>
 	</div>
 
 
-    <div style="display: flex; justify-content: center; margin: 2.5rem 0;">
+    <div class="12u$" style="margin: 2.5rem 0;">
         <iframe
             src="https://www.youtube.com/embed/Se237UXFKlQ?si=r2QQ6sED5mduPdzH"
             title="YouTube video player"
@@ -62,7 +63,7 @@ nav-menu: true
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
-            style="width: 100%; max-width: 1000px; height: 560px; border: 0;"
+            style="width: 100%; height: 560px; border: 0;"
         ></iframe>
     </div>
 
