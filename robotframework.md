@@ -28,21 +28,20 @@ nav-menu: true
         <p>I developed an automation project to blabla ecommerce bla bla não sei o que lá</p>
 
 		<iframe src="https://codesandbox.io/p/github/MarceloPinheiroQA/Automation/main?import=true&embed=1&file=%2FTests%2FAPI%2F01_SmokeApi.robot"
-			style="width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden; margin-bottom: 2rem; margin-top: 2rem;""
+			style="width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden; margin-bottom: 2rem; margin-top: 2rem;"
 			title="MarceloPinheiroQA/Automation/main"
 			allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
 			sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 		></iframe>
 
 
-        <ul class="actions">
+        <ul class="actions" style="margin-bottom: 0;">
             <li><a href="https://github.com/MarceloPinheiroQA/Automation" class="button special icon fa-github">Robot Repo</a></li>
         </ul>
 
         <!-- Blockquote -->
-        <h3>Did you know?</h3>
+        <h3 style="clear: both; margin-top: 2.5rem;">Did you know?</h3>
         <blockquote>Robot Framework is agnostic by design. While it’s famous for web testing, it’s not tied to any specific language or technology. From APIs and Databases to SSH and Mainframes, it uses the same 'keyword' logic to automate almost anything in the digital world..</blockquote>
-
 
         <hr class="major" />
     
@@ -66,18 +65,6 @@ nav-menu: true
     </div>
 
 	<!-- Break -->
-	<div class="4u 12u$(medium)">
-		<h3>Interdum sapien gravida</h3>
-		<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-	</div>
-	<div class="4u 12u$(medium)">
-		<h3>Faucibus consequat lorem</h3>
-		<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-	</div>
-	<div class="4u$ 12u$(medium)">
-		<h3>Accumsan montes viverra</h3>
-		<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-	</div>
 </div>
 
 <hr class="major" />

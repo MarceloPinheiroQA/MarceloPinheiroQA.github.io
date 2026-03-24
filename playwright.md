@@ -36,12 +36,12 @@ nav-menu: true
 		></iframe>
 
 
-        <ul class="actions">
+        <ul class="actions" style="margin-bottom: 0;">
             <li><a href="https://github.com/MarceloPinheiroQA/playwright-automation" class="button special icon fa-github">Playwright Repo</a></li>
         </ul>
 
         <!-- Blockquote -->
-        <h3>Did you know?</h3>
+        <h3 style="clear: both; margin-top: 2.5rem;">Did you know?</h3>
         <blockquote>The <b>Browser Library</b> is architected upon Playwright’s high-performance engine, seamlessly blending human-readable syntax with elite-level execution speed. Truly, <em>the best of both worlds</em>.</blockquote>
 
 
@@ -67,19 +67,6 @@ nav-menu: true
     </div>
 
 	<!-- Break -->
-	<div class="4u 12u$(medium)">
-		<h3>Interdum sapien gravida</h3>
-		<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-	</div>
-	<div class="4u 12u$(medium)">
-		<h3>Faucibus consequat lorem</h3>
-		<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-	</div>
-	<div class="4u$ 12u$(medium)">
-		<h3>Accumsan montes viverra</h3>
-		<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-	</div>
-</div>
 
 <hr class="major" />
 
