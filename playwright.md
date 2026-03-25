@@ -16,7 +16,7 @@ nav-menu: true
 		</header>
 
 <!-- Content -->
-<h2 id="content">Playwright project automation</h2>
+<h2 id="content">Why Playwright?</h2>
 <p>After working with Robot Framework, I started building automations with Playwright to gain more speed and flexibility in web testing. Playwright handles async flows naturally, which makes test execution smoother and helps reduce flaky scenarios. It also connects well with AI tools and MCP workflows, making debugging and test maintenance more efficient. Although Robot Framework is still a great framework, Playwright adds another strong option for modern and complex web apps.</p>
 
 <hr class="major" />
@@ -25,7 +25,7 @@ nav-menu: true
 
 	<div class="12u$">
 		<h2 id="automation-project">Playwright Automation Project</h2>
-		<p>This project features a robust end-to-end (E2E) automation suite I developed for the <a href=https://www.automationexercise.com/">Automation Exercise platform</a> using Playwright. It was built using the Page Object Model (POM) design pattern for enhanced maintainability. The goal was to validate critical user journeys in a realistic e-commerce environment, checking both UI and APIs and ensuring functional stability across multiple layers of the application.</p>
+		<p>This project features a robust end-to-end (E2E) automation suite I developed for the <a href="https://www.automationexercise.com">Automation Exercise platform</a> using Playwright. It was built using the Page Object Model (POM) design pattern for enhanced maintainability. The goal was to validate critical user journeys in a realistic e-commerce environment, checking both UI and APIs and ensuring functional stability across multiple layers of the application.</p>
 	</div>
 
     <iframe 
@@ -45,7 +45,7 @@ nav-menu: true
     <div class="12u$">
         <!-- Blockquote -->
         <h3 style="clear: both; margin-top: 2.5rem;">Did you know?</h3>
-        <blockquote>The <b>Browser Library</b> is architected upon Playwright’s high-performance engine, seamlessly blending human-readable syntax with elite-level execution speed. Truly, <em>the best of both worlds</em>.</blockquote>
+        <blockquote>The <b>Robot's Browser Libraryis architected upon Playwright</b>’s high-performance engine, seamlessly blending human-readable syntax with elite-level execution speed. Truly, <em>the best of both worlds</em>.</blockquote>
     </div>
 
     <hr class="major" />

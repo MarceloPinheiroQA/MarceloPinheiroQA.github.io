@@ -16,7 +16,7 @@ nav-menu: true
 		</header>
 
 <!-- Content -->
-<h2 id="content">Robot project automation</h2>
+<h2 id="content">Why Robot?</h2>
 <p>I have been working with Robot Framework for 6 years, and it has been a key part of my automation journey. One of its biggest strengths is readability: the keyword-driven style makes test cases clear, maintainable, and easy for technical and non-technical teams to understand. I have solid hands-on experience with both SeleniumLibrary and Browser Library for web automation, and I also use Robot to validate REST and SOAP APIs as part of integration and end-to-end test strategies. Robot Framework gives me a reliable, scalable foundation for building structured test suites with strong reporting and smooth CI/CD integration.</p>
 
 <hr class="major" />
@@ -25,7 +25,7 @@ nav-menu: true
 
 	<div class="12u$">
 		<h2 id="automation-project">Robot Automation Project</h2>
-		<p></p>
+		<p>This repository showcases a professional automation framework built with Robot Framework and the Browser (Playwright-based) library, following the Page Object Model (POM) design pattern for maximum maintainability. The suite covers both UI and REST API testing, ensuring full-stack validation of the application. I implemented Poetry for robust dependency management and environment isolation, ensuring consistent builds. The entire project is containerized with Docker and integrated into a GitHub Actions CI/CD pipeline, providing a scalable and production-ready testing solution.</p>
 	</div>
 
 		<iframe src="https://codesandbox.io/p/github/MarceloPinheiroQA/Automation/main?import=true&embed=1&file=%2FTests%2FAPI%2F01_SmokeApi.robot"
