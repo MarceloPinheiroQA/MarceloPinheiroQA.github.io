@@ -12,7 +12,7 @@ nav-menu: true
 <section id="one">
 	<div class="inner">
 		<header class="major">
-			<h1>Playwright</h1>
+			<h1>ROBOT FRAMEWORK</h1>
 		</header>
 
 <!-- Content -->
@@ -25,7 +25,7 @@ nav-menu: true
 
 	<div class="12u$">
 		<h2 id="automation-project">Robot Automation Project</h2>
-		<p>I developed an automation project to blabla ecommerce bla bla não sei o que lá</p>
+		<p></p>
 	</div>
 
 		<iframe src="https://codesandbox.io/p/github/MarceloPinheiroQA/Automation/main?import=true&embed=1&file=%2FTests%2FAPI%2F01_SmokeApi.robot"
@@ -35,21 +35,23 @@ nav-menu: true
 			sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 		></iframe>
 
-
+    <div class="12u$">
         <ul class="actions" style="margin-bottom: 0;">
             <li><a href="https://github.com/MarceloPinheiroQA/Automation" class="button special icon fa-github">Robot Repo</a></li>
         </ul>
+    </div>
 
+    <div class="12u$">
         <!-- Blockquote -->
         <h3 style="clear: both; margin-top: 2.5rem;">Did you know?</h3>
         <blockquote>Robot Framework is agnostic by design. While it’s famous for web testing, it’s not tied to any specific language or technology. From APIs and Databases to SSH and Mainframes, it uses the same 'keyword' logic to automate almost anything in the digital world..</blockquote>
+    </div>
 
         <hr class="major" />
     
-    
 	<div class="12u$">
 		<h3>CI/CD Integration</h3>
-		<p>I created a pipeline to run the automation project, it goes by runtype bla bla bla bla.</p>
+		<p>The project is fully integrated with GitHub Actions, serving as a quality gate that triggers a full regression on every push to master. I also configured manual triggers via tags, allowing for on-demand execution of @smoke or @regression suites directly from the repository, with automated HTML reports and traces for instant debugging.</p>
 	</div>
 
 

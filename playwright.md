@@ -12,7 +12,7 @@ nav-menu: true
 <section id="one">
 	<div class="inner">
 		<header class="major">
-			<h1>Playwright</h1>
+			<h1>PLAYWRIGHT</h1>
 		</header>
 
 <!-- Content -->
@@ -25,35 +25,35 @@ nav-menu: true
 
 	<div class="12u$">
 		<h2 id="automation-project">Playwright Automation Project</h2>
-		<p>I developed an automation project to blabla ecommerce bla bla não sei o que lá</p>
+		<p>This project features a robust end-to-end (E2E) automation suite I developed for the <a href=https://www.automationexercise.com/">Automation Exercise platform</a> using Playwright. It was built using the Page Object Model (POM) design pattern for enhanced maintainability. The goal was to validate critical user journeys in a realistic e-commerce environment, checking both UI and APIs and ensuring functional stability across multiple layers of the application.</p>
 	</div>
 
-		<iframe 
-			src="https://codesandbox.io/p/github/MarceloPinheiroQA/playwright-automation/Main?embed=1&file=%2Fpackage.json"
-			style="width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden; margin-bottom: 2rem; margin-top: 2rem;"
-			title="MarceloPinheiroQA/playwright-automation/Main"
-			allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-			sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-		></iframe>
+    <iframe 
+        src="https://codesandbox.io/p/github/MarceloPinheiroQA/playwright-automation/Main?embed=1&file=%2Fpackage.json"
+        style="width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden; margin-bottom: 2rem; margin-top: 2rem;"
+        title="MarceloPinheiroQA/playwright-automation/Main"
+        allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+        sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+    ></iframe>
 
-
+    <div class="12u$">
         <ul class="actions" style="margin-bottom: 0;">
             <li><a href="https://github.com/MarceloPinheiroQA/playwright-automation" class="button special icon fa-github">Playwright Repo</a></li>
         </ul>
+    </div>
 
+    <div class="12u$">
         <!-- Blockquote -->
         <h3 style="clear: both; margin-top: 2.5rem;">Did you know?</h3>
         <blockquote>The <b>Browser Library</b> is architected upon Playwright’s high-performance engine, seamlessly blending human-readable syntax with elite-level execution speed. Truly, <em>the best of both worlds</em>.</blockquote>
+    </div>
 
-
-        <hr class="major" />
-    
+    <hr class="major" />
     
 	<div class="12u$">
 		<h3>CI/CD Integration</h3>
-		<p>I created a pipeline to run the automation project, it goes by runtype bla bla dotenv bla bla.</p>
+		<p>The project is fully integrated with GitHub Actions, serving as a quality gate that triggers a full regression on every push to master. I also configured manual triggers via tags, allowing for on-demand execution of @smoke or @regression suites directly from the repository, with automated HTML reports and traces for instant debugging.</p>
 	</div>
-
 
     <div class="12u$" style="margin: 2.5rem 0;">
         <iframe
