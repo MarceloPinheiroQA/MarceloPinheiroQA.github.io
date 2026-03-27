@@ -53,15 +53,18 @@ title: Certificates
     display: block;
   }
 
-  /* Legenda no Azul do Site */
+/* Legenda Branca e com fonte padrão (fininha) do corpo do site */
   #cert-caption {
     text-align: center;
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: #10c5f8; 
+    /* Removemos o font-weight: bold para ficar fininha */
+    font-weight: 400; 
+    font-size: 1.4rem; /* Ajuste o tamanho se achar necessário */
+    color: #ffffff !important; /* Branco puro e forçado */
     margin-top: 30px;
     min-height: 1.8em;
     transition: opacity 0.3s ease;
+    /* Garante que use a mesma fonte do resto do corpo do texto */
+    font-family: inherit; 
   }
 
   .swiper-pagination-bullet-active {
@@ -79,6 +82,10 @@ title: Certificates
 
       <div class="swiper-slide" data-name="Certified Tester Foundation Level - Agile Tester (CTFL-AT)">
         <img src="assets/certificados/ctfl-at.jpg" alt="CTFL-AT">
+      </div>
+
+      <div class="swiper-slide" data-name="Cambridge FCE">
+        <img src="assets/certificados/fce.jpg" alt="FCE">
       </div>
 
     </div>
