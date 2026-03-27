@@ -11,11 +11,9 @@ title: Certificates
     width: 100%;
     margin: 40px auto;
     position: relative;
-    /* Impede que os clones do loop criem uma barra de rolagem horizontal */
-    overflow: hidden; 
+    overflow: hidden;
   }
 
-  /* Estilização das setas (Brancas com fundo azul sutil) */
   .swiper-button-next, .swiper-button-prev {
     color: #ffffff !important;
     background: rgba(16, 197, 248, 0.2);
@@ -25,10 +23,6 @@ title: Certificates
     z-index: 100;
   }
 
-  .swiper-button-next:after, .swiper-button-prev:after {
-    font-size: 18px;
-  }
-
   .swiper {
     width: 100%;
     padding-top: 30px !important;
@@ -36,18 +30,13 @@ title: Certificates
   }
 
   .swiper-slide {
-    width: 320px; 
-    /* Transição suave para escala e brilho */
+    width: 300px; 
     transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1) !important;
     filter: brightness(0.3);
     transform: scale(0.8);
-    opacity: 0.6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    opacity: 0.5;
   }
 
-  /* O SEGREDO: O slide que estiver com a classe 'active' ganha destaque total */
   .swiper-slide-active {
     filter: brightness(1);
     transform: scale(1.1);
@@ -59,10 +48,8 @@ title: Certificates
     width: 100%;
     border-radius: 8px;
     box-shadow: 0 15px 45px rgba(0,0,0,0.8);
-    display: block;
   }
 
-  /* Legenda Branca e Fina (Estilo Formulário) */
   #cert-caption {
     text-align: center;
     font-weight: 300; 
@@ -71,7 +58,6 @@ title: Certificates
     margin-top: 20px;
     min-height: 1.8em;
     transition: opacity 0.4s ease;
-    font-family: inherit;
   }
 
   .swiper-pagination-bullet-active {
@@ -106,10 +92,49 @@ title: Certificates
 </div>
 
 <script>
-  const caption = document.getElementById('cert-caption');
+  // Função de atualização isolada para evitar erros de referência
+  function updateText(swiperInstance) {
+    const captionElement = document.getElementById('cert-caption');
+    // Busca o slide ativo real (funciona com loop)
+    const activeSlide = swiperInstance.slides[swiperInstance.activeIndex];
+    
+    if (activeSlide && captionElement) {
+      const title = activeSlide.getAttribute('data-name');
+      captionElement.style.opacity = 0;
+      setTimeout(() => {
+        captionElement.innerText = title;
+        captionElement.style.opacity = 1;
+      }, 250);
+    }
+  }
 
   const swiper = new Swiper(".myCircularSwiper", {
-    // Trocamos o efeito para slide simples para permitir a centralização circular
     effect: "slide",
     grabCursor: true,
-    centeredSlides: true, //
+    centeredSlides: true,
+    slidesPerView: "auto",
+    loop: true,
+    loopedSlides: 3, 
+    speed: 800,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    on: {
+      init: function () {
+        updateText(this);
+      },
+      slideChange: function () {
+        updateText(this);
+      }
+    }
+  });
+</script>
