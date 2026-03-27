@@ -68,12 +68,9 @@ nav-menu: true
     </div>
 
 	<!-- Break -->
-
+</div>
 <hr class="major" />
 
-
-</div>
-</div>
 
 </div>
 </section>

@@ -54,7 +54,6 @@ nav-menu: true
 		<p>The project is fully integrated with GitHub Actions, serving as a quality gate that triggers a full regression on every push to master. I also configured manual triggers via tags, allowing for on-demand execution of @smoke or @regression suites directly from the repository, with automated HTML reports and traces for instant debugging.</p>
 	</div>
 
-
     <div class="12u$" style="margin: 2.5rem 0;">
         <iframe
             src="https://www.youtube.com/embed/XpdpW0z9xnQ?si=0noiDIULmswkWCQ7&amp;start=10"
@@ -71,10 +70,6 @@ nav-menu: true
 </div>
 
 <hr class="major" />
-
-
-</div>
-</div>
 
 </div>
 </section>
