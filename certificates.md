@@ -11,67 +11,67 @@ title: Certificates
     width: 100%;
     margin: 40px auto;
     position: relative;
-    overflow: hidden;
+    /* Impede que os clones do loop criem uma barra de rolagem horizontal */
+    overflow: hidden; 
   }
 
-  /* Setas customizadas com o azul do seu site */
+  /* Estilização das setas (Brancas com fundo azul sutil) */
   .swiper-button-next, .swiper-button-prev {
     color: #ffffff !important;
-    background: rgba(16, 197, 248, 0.3);
+    background: rgba(16, 197, 248, 0.2);
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    transition: 0.3s;
-  }
-
-  .swiper-button-next:hover, .swiper-button-prev:hover {
-    background: rgba(16, 197, 248, 0.6);
+    z-index: 100;
   }
 
   .swiper-button-next:after, .swiper-button-prev:after {
     font-size: 18px;
-    font-weight: bold;
   }
 
   .swiper {
     width: 100%;
-    padding-top: 20px !important;
-    padding-bottom: 60px !important;
+    padding-top: 30px !important;
+    padding-bottom: 70px !important;
   }
 
   .swiper-slide {
     width: 320px; 
-    /* Transição suave de 0.8s com curva de aceleração elegante */
-    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1) !important;
-    filter: brightness(0.3) grayscale(50%);
-    transform: scale(0.85);
+    /* Transição suave para escala e brilho */
+    transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    filter: brightness(0.3);
+    transform: scale(0.8);
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  /* Destaque do certificado central */
+  /* O SEGREDO: O slide que estiver com a classe 'active' ganha destaque total */
   .swiper-slide-active {
-    filter: brightness(1) grayscale(0);
+    filter: brightness(1);
     transform: scale(1.1);
+    opacity: 1;
     z-index: 10;
   }
 
   .swiper-slide img {
     width: 100%;
     border-radius: 8px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    box-shadow: 0 15px 45px rgba(0,0,0,0.8);
     display: block;
   }
 
-  /* Legenda Branca, Fina (300) e usando a fonte do tema */
+  /* Legenda Branca e Fina (Estilo Formulário) */
   #cert-caption {
     text-align: center;
     font-weight: 300; 
     font-size: 1.4rem;
     color: #ffffff !important;
-    margin-top: 40px;
+    margin-top: 20px;
     min-height: 1.8em;
     transition: opacity 0.4s ease;
     font-family: inherit;
-    letter-spacing: 0.5px;
   }
 
   .swiper-pagination-bullet-active {
@@ -80,7 +80,7 @@ title: Certificates
 </style>
 
 <div class="cert-container">
-  <div class="swiper mySwiper">
+  <div class="swiper myCircularSwiper">
     <div class="swiper-wrapper">
       
       <div class="swiper-slide" data-name="Certified Tester Foundation Level (CTFL)">
@@ -108,50 +108,8 @@ title: Certificates
 <script>
   const caption = document.getElementById('cert-caption');
 
-  const swiper = new Swiper(".mySwiper", {
-    effect: "coverflow",
+  const swiper = new Swiper(".myCircularSwiper", {
+    // Trocamos o efeito para slide simples para permitir a centralização circular
+    effect: "slide",
     grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    loop: true,
-    loopedSlides: 3, // Importante para 3 slides não bugarem no loop
-    speed: 1000, // Movimento bem suave (1 segundo)
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    coverflowEffect: {
-      rotate: 0, // Removi a rotação para os slides não "entortarem" ao fundo
-      stretch: 50, // Espaçamento entre certificados lateralmente
-      depth: 150, // Profundidade 3D
-      modifier: 1,
-      slideShadows: false,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    on: {
-      init: function () {
-        // Correção para pegar o nome no loop infinito
-        const activeSlide = this.slides[this.activeIndex];
-        caption.innerText = activeSlide.getAttribute('data-name');
-      },
-      slideChange: function () {
-        const activeSlide = this.slides[this.activeIndex];
-        if (activeSlide) {
-          const title = activeSlide.getAttribute('data-name');
-          caption.style.opacity = 0;
-          setTimeout(() => {
-            caption.innerText = title;
-            caption.style.opacity = 1;
-          }, 300);
-        }
-      }
-    }
-  });
-</script>
+    centeredSlides: true, //
