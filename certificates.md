@@ -11,60 +11,67 @@ title: Certificates
     width: 100%;
     margin: 40px auto;
     position: relative;
+    overflow: hidden;
   }
 
-  /* Ajuste das setas para ficarem visíveis no seu fundo azul */
+  /* Setas customizadas com o azul do seu site */
   .swiper-button-next, .swiper-button-prev {
     color: #ffffff !important;
-    background: rgba(16, 197, 248, 0.2); /* Fundo azul clarinho transparente */
-    width: 50px;
-    height: 50px;
+    background: rgba(16, 197, 248, 0.3);
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
-    z-index: 100;
+    transition: 0.3s;
+  }
+
+  .swiper-button-next:hover, .swiper-button-prev:hover {
+    background: rgba(16, 197, 248, 0.6);
   }
 
   .swiper-button-next:after, .swiper-button-prev:after {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
   }
 
   .swiper {
     width: 100%;
+    padding-top: 20px !important;
     padding-bottom: 60px !important;
   }
 
   .swiper-slide {
     width: 320px; 
-    transition: all 0.6s ease-in-out;
-    filter: brightness(0.4);
-    transform: scale(0.9);
+    /* Transição suave de 0.8s com curva de aceleração elegante */
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    filter: brightness(0.3) grayscale(50%);
+    transform: scale(0.85);
   }
 
   /* Destaque do certificado central */
   .swiper-slide-active {
-    filter: brightness(1);
+    filter: brightness(1) grayscale(0);
     transform: scale(1.1);
+    z-index: 10;
   }
 
   .swiper-slide img {
     width: 100%;
     border-radius: 8px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.7);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
     display: block;
   }
 
-/* Legenda Branca e com fonte padrão (fininha) do corpo do site */
+  /* Legenda Branca, Fina (300) e usando a fonte do tema */
   #cert-caption {
     text-align: center;
-    /* Removemos o font-weight: bold para ficar fininha */
-    font-weight: 400; 
-    font-size: 1.4rem; /* Ajuste o tamanho se achar necessário */
-    color: #ffffff !important; /* Branco puro e forçado */
-    margin-top: 30px;
+    font-weight: 300; 
+    font-size: 1.4rem;
+    color: #ffffff !important;
+    margin-top: 40px;
     min-height: 1.8em;
-    transition: opacity 0.3s ease;
-    /* Garante que use a mesma fonte do resto do corpo do texto */
-    font-family: inherit; 
+    transition: opacity 0.4s ease;
+    font-family: inherit;
+    letter-spacing: 0.5px;
   }
 
   .swiper-pagination-bullet-active {
@@ -99,7 +106,6 @@ title: Certificates
 </div>
 
 <script>
-  // Inicialização forçada para funcionar com poucos slides
   const caption = document.getElementById('cert-caption');
 
   const swiper = new Swiper(".mySwiper", {
@@ -107,16 +113,17 @@ title: Certificates
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: "auto",
-    loop: true, 
-    speed: 900, // Transição mais lenta
+    loop: true,
+    loopedSlides: 3, // Importante para 3 slides não bugarem no loop
+    speed: 1000, // Movimento bem suave (1 segundo)
     autoplay: {
-      delay: 5000, // 5 segundos
-      disableOnInteraction: false, // Não para se você clicar
+      delay: 5000,
+      disableOnInteraction: false,
     },
     coverflowEffect: {
-      rotate: 15,
-      stretch: 0,
-      depth: 100,
+      rotate: 0, // Removi a rotação para os slides não "entortarem" ao fundo
+      stretch: 50, // Espaçamento entre certificados lateralmente
+      depth: 150, // Profundidade 3D
       modifier: 1,
       slideShadows: false,
     },
@@ -130,12 +137,11 @@ title: Certificates
     },
     on: {
       init: function () {
-        // Pega o nome do primeiro slide
-        const initialSlide = this.slides[this.activeIndex];
-        caption.innerText = initialSlide.getAttribute('data-name');
+        // Correção para pegar o nome no loop infinito
+        const activeSlide = this.slides[this.activeIndex];
+        caption.innerText = activeSlide.getAttribute('data-name');
       },
       slideChange: function () {
-        // Atualiza conforme troca
         const activeSlide = this.slides[this.activeIndex];
         if (activeSlide) {
           const title = activeSlide.getAttribute('data-name');
@@ -143,7 +149,7 @@ title: Certificates
           setTimeout(() => {
             caption.innerText = title;
             caption.style.opacity = 1;
-          }, 200);
+          }, 300);
         }
       }
     }
