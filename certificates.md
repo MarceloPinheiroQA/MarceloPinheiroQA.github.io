@@ -31,10 +31,14 @@ title: Certificates
 
   .swiper-slide {
     width: 300px; 
-    transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition:
+      transform 1.2s cubic-bezier(0.4, 0, 0.2, 1),
+      filter 1.2s cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
     filter: brightness(0.3);
     transform: scale(0.8);
     opacity: 0.5;
+    will-change: transform, opacity, filter;
   }
 
   .swiper-slide-active {
@@ -62,6 +66,11 @@ title: Certificates
 
   .swiper-pagination-bullet-active {
     background: #10c5f8 !important;
+  }
+
+  /* Deixa a animação do "wrapper" mais suave também */
+  .myCircularSwiper .swiper-wrapper {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
   }
 </style>
 
@@ -114,11 +123,11 @@ title: Certificates
     centeredSlides: true,
     slidesPerView: "auto",
     loop: true,
-    loopedSlides: 3, 
-    speed: 800,
+    speed: 1600,
     autoplay: {
-      delay: 5000,
+      delay: 7000,
       disableOnInteraction: false,
+      pauseOnMouseEnter: true,
     },
     navigation: {
       nextEl: ".swiper-button-next",
@@ -132,9 +141,10 @@ title: Certificates
       init: function () {
         updateText(this);
       },
-      slideChange: function () {
+      // Atualiza o texto ao final da transição (combina com animação mais lenta)
+      slideChangeTransitionEnd: function () {
         updateText(this);
       }
     }
   });
-</script>
+</script> 
