@@ -30,22 +30,15 @@ title: Certificates
   }
 
   .swiper-slide {
-    width: 300px; 
-    transition:
-      transform 1.2s cubic-bezier(0.4, 0, 0.2, 1),
-      filter 1.2s cubic-bezier(0.4, 0, 0.2, 1),
-      opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
-    filter: brightness(0.3);
+    width: 320px;
+    filter: brightness(0.35);
     transform: scale(0.8);
-    opacity: 0.5;
+    opacity: 0.45;
     will-change: transform, opacity, filter;
-  }
-
-  .swiper-slide-active {
-    filter: brightness(1);
-    transform: scale(1.1);
-    opacity: 1;
-    z-index: 10;
+    transition:
+      transform 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+      filter 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 0.45s cubic-bezier(0.4, 0, 0.2, 1) !important;
   }
 
   .swiper-slide img {
@@ -68,43 +61,51 @@ title: Certificates
     background: #10c5f8 !important;
   }
 
-  /* Deixa a animação do "wrapper" mais suave também */
   .myCircularSwiper .swiper-wrapper {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
   }
 </style>
 
-<div class="cert-container">
-  <div class="swiper myCircularSwiper">
-    <div class="swiper-wrapper">
-      
-      <div class="swiper-slide" data-name="Certified Tester Foundation Level (CTFL)">
-        <img src="assets/certificados/ctfl.png" alt="CTFL">
-      </div>
+<!-- Main -->
+<div id="main" class="alt">
+  <section id="one">
+    <div class="inner">
+      <header class="major">
+        <h1>CERTIFICATES</h1>
+      </header>
 
-      <div class="swiper-slide" data-name="Certified Tester Foundation Level - Agile Tester (CTFL-AT)">
-        <img src="assets/certificados/ctfl-at.jpg" alt="CTFL-AT">
-      </div>
+      <div class="cert-container">
+        <div class="swiper myCircularSwiper">
+          <div class="swiper-wrapper">
+            
+            <div class="swiper-slide" data-name="Certified Tester Foundation Level (CTFL)">
+              <img src="assets/certificados/ctfl.png" alt="CTFL">
+            </div>
 
-      <div class="swiper-slide" data-name="Cambridge FCE">
-        <img src="assets/certificados/fce.jpg" alt="FCE">
-      </div>
+            <div class="swiper-slide" data-name="Certified Tester Foundation Level - Agile Tester (CTFL-AT)">
+              <img src="assets/certificados/ctfl-at.jpg" alt="CTFL-AT">
+            </div>
 
+            <div class="swiper-slide" data-name="Cambridge FCE">
+              <img src="assets/certificados/fce.jpg" alt="FCE">
+            </div>
+
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div id="cert-caption">Loading...</div>
+      </div>
     </div>
-
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
-  </div>
-
-  <div id="cert-caption">Loading...</div>
+  </section>
 </div>
 
 <script>
-  // Função de atualização isolada para evitar erros de referência
   function updateText(swiperInstance) {
     const captionElement = document.getElementById('cert-caption');
-    // Busca o slide ativo real (funciona com loop)
     const activeSlide = swiperInstance.slides[swiperInstance.activeIndex];
     
     if (activeSlide && captionElement) {
@@ -117,13 +118,31 @@ title: Certificates
     }
   }
 
+  function updateSlideStates(swiperInstance) {
+    swiperInstance.slides.forEach((slide) => {
+      const progress = Math.max(Math.min(slide.progress, 2), -2);
+      const absProgress = Math.abs(progress);
+
+      const scale = 1.1 - Math.min(absProgress * 0.25, 0.4);
+      const opacity = 1 - Math.min(absProgress * 0.5, 0.55);
+      const brightness = 1 - Math.min(absProgress * 0.4, 0.65);
+
+      slide.style.transform = `translate3d(0, 0, 0) scale(${scale})`;
+      slide.style.opacity = opacity;
+      slide.style.filter = `brightness(${brightness})`;
+      slide.style.zIndex = String(100 - Math.round(absProgress * 10));
+    });
+  }
+
   const swiper = new Swiper(".myCircularSwiper", {
     effect: "slide",
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: "auto",
     loop: true,
-    speed: 1600,
+    loopAdditionalSlides: 3,
+    watchSlidesProgress: true,
+    speed: 950,
     autoplay: {
       delay: 7000,
       disableOnInteraction: false,
@@ -139,9 +158,18 @@ title: Certificates
     },
     on: {
       init: function () {
+        this.updateSlidesProgress();
+        updateSlideStates(this);
         updateText(this);
       },
-      // Atualiza o texto ao final da transição (combina com animação mais lenta)
+      setTranslate: function () {
+        updateSlideStates(this);
+      },
+      setTransition: function (speed) {
+        this.slides.forEach((slide) => {
+          slide.style.transitionDuration = `${speed}ms`;
+        });
+      },
       slideChangeTransitionEnd: function () {
         updateText(this);
       }
