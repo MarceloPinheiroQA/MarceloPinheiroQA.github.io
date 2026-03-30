@@ -1,7 +1,7 @@
 ---
-title: Landing
+title: Technical Hub
 layout: landing
-description: 'Lorem ipsum dolor sit amet nullam consequa<br />sed veroeros. tempus adipiscing nulla.'
+description: 'A showcase of my technical trajectory, core stacks, and engineering contributions.'
 image: assets/images/pic07.jpg
 nav-menu: true
 ---
@@ -15,7 +15,7 @@ nav-menu: true
 		<header class="major">
 			<h2>About me</h2>
 		</header>
-		<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna.</p>
+		<p>I am a Software QA Engineer with 6 years of experience and ISTQB certifications. My work goes beyond finding bugs as I focus on engineering confidence into every product through robust automation. Whether I am validating complex APIs or stress-testing systems with k6, I aim to build automated suites that are as scalable as the code they test. I am driven by technical challenges and a constant need to refine my architectural approach to ensure faster and safer deployments.</p>
 	</div>
 </section>
 
