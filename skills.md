@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Skills & Stacks
+description: 'A comprehensive overview of my technical expertise.'
 image: assets/images/pic01.jpg
 nav-menu: true
 ---

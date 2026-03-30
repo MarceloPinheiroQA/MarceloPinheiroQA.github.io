@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Certificates
+description: 'A collection of my professional certifications and technical achievements.'
 ---
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />

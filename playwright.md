@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Playwright
+description: 'End-to-end testing suite for e-commerce journeys using Playwright and Page Object Model.'
 image: assets/images/pic01.jpg
 nav-menu: true
 ---

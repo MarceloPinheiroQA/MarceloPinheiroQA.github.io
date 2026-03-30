@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Robot Framework
+description: 'Automation framework developed with Robot Framework for cross-layer regression testing.'
 image: assets/images/pic01.jpg
 nav-menu: true
 ---
