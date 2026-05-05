@@ -30,12 +30,12 @@ nav-menu: true
 	</div>
 
     <iframe 
-        src="https://codesandbox.io/p/github/MarceloPinheiroQA/playwright-automation/Main?embed=1&file=%2Fpackage.json"
-        style="width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden; margin-bottom: 2rem; margin-top: 2rem;"
+        src="https://codesandbox.io/p/github/MarceloPinheiroQA/playwright-automation/Main?import=true&embed=1&file=%2FREADME.md"
+        style="width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden;margin-bottom: 2rem; margin-top: 2rem;"
         title="MarceloPinheiroQA/playwright-automation/Main"
         allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
         sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-    ></iframe>
+   ></iframe>
 
     <div class="12u$">
         <ul class="actions" style="margin-bottom: 0;">

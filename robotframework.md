@@ -30,12 +30,13 @@ nav-menu: true
 		<p>This repository showcases a professional automation framework built with Robot Framework and the Browser (Playwright-based) library, following the Page Object Model (POM) design pattern for maximum maintainability. The suite covers both UI and REST API testing, ensuring full-stack validation of the application. I implemented Poetry for robust dependency management and environment isolation, ensuring consistent builds. The entire project is containerized with Docker and integrated into a GitHub Actions CI/CD pipeline, providing a scalable and production-ready testing solution.</p>
 	</div>
 
-		<iframe src="https://codesandbox.io/p/github/MarceloPinheiroQA/Automation/main?import=true&embed=1&file=%2FTests%2FAPI%2F01_SmokeApi.robot"
-			style="width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden; margin-bottom: 2rem; margin-top: 2rem;"
-			title="MarceloPinheiroQA/Automation/main"
-			allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-			sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-		></iframe>
+        <iframe 
+            src="https://codesandbox.io/p/github/MarceloPinheiroQA/Automation/main?embed=1&file=%2FREADME.md"
+            style="width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden; margin-bottom: 2rem; margin-top: 2rem;"
+            title="MarceloPinheiroQA/Automation/main"
+            allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+            sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+        ></iframe>
 
     <div class="12u$">
         <ul class="actions" style="margin-bottom: 0;">
