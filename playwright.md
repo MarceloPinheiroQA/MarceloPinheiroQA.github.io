@@ -58,13 +58,13 @@ nav-menu: true
 
     <div class="12u$" style="margin: 2.5rem 0;">
         <iframe
-            src="https://www.youtube.com/embed/Se237UXFKlQ?si=r2QQ6sED5mduPdzH"
-            title="YouTube video player"
+            src="https://www.youtube.com/embed/4DO6LL-qS-8?si=Ek5Fj01tZIIX8ZWh"
+            title="Playwright CI/CD"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
-            style="width: 100%; height: 560px; border: 0;"
+            style="width: 100%; height: 560px; border: 0; margin-top: 1.5rem;"
         ></iframe>
     </div>
 
