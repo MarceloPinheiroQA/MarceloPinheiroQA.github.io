@@ -2,7 +2,7 @@
 layout: page
 title: Robot Framework
 description: 'Cross-layer regression testing with Robot Framework.'
-image: assets/images/pic01.jpg
+image: assets/images/NewAssets/beach_2.dng
 nav-menu: true
 
 ---

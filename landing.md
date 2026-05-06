@@ -23,7 +23,7 @@ nav-menu: true
 <section id="two" class="spotlights">
 	<section>
 		<a href="generic.html" class="image">
-			<img src="{% link assets/images/pic08.jpg %}" alt="" data-position="center center" />
+			<img src="{% assets/images/NewAssets/sun.dng %}" alt="" data-position="center center" />
 		</a>
 		<div class="content">
 			<div class="inner">
@@ -32,14 +32,14 @@ nav-menu: true
 				</header>
 				<p>Senior QA Engineer with 5+ years of experience specializing in end-to-end automation and performance testing. Expert in building scalable testing frameworks and ensuring software reliability for international projects. Click the button below to access my full professional background, detailed technical stack, and project history.</p>
 				<ul class="actions">
-					<li><a href="assets/Resume_Marcelo_Pinheiro_QA [2026].pdf" target="_blank" class="button">My Resume</a></li>
+					<li><a href="link assets/Resume_Marcelo_Pinheiro_QA [2026].pdf" target="_blank" class="button">My Resume</a></li>
 				</ul>
 			</div>
 		</div>
 	</section>
 	<section>
 		<a href="generic.html" class="image">
-			<img src="{% link assets/images/pic09.jpg %}" alt="" data-position="top center" />
+			<img src="{% link assets/images/NewAssets/church.dng %}" alt="" data-position="top center" />
 		</a>
 		<div class="content">
 			<div class="inner">
@@ -55,7 +55,7 @@ nav-menu: true
 	</section>
 	<section>
 		<a href="generic.html" class="image">
-			<img src="{% link assets/images/pic10.jpg %}" alt="" data-position="25% 25%" />
+			<img src="{% link assets/images/NewAssets/river.jpg %}" alt="" data-position="25% 25%" />
 		</a>
 		<div class="content">
 			<div class="inner">
