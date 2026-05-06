@@ -9,6 +9,8 @@ jobs:
   github-pages:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: helaili/jekyll-action@2.0.5
-        build_only: true
+      - uses: actions/checkout@v4 #v4
+      
+      - uses: helaili/jekyll-action@v2
+        with: 
+          build_only: true
